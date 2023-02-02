@@ -31,10 +31,11 @@ body {
     text-decoration: none !important;
 }
 
-#buttons,#scores ,#addButtonLocal ,#addButtonAway{
+#buttons,#scores ,#addButtonLocal ,#addButtonAway,#subtractButtonLocal, #subtractButtonAway {
     display: flex;
     justify-content: space-evenly;
     color: #b0c4de;
+    margin-bottom: 10px;
  } 
 
 #scores{
@@ -54,11 +55,14 @@ body {
     margin: 0 10px;
 }
 
+.team{
+    width: 245px;
+}
 
 #local, #away{
     display: flex;
     align-items: center;
-    width: 200px;
+    width: 245px;
     justify-content: center;
     text-align: center;
     vertical-align: middle;

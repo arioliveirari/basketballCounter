@@ -12,45 +12,69 @@
             
             <div id="scores">
                 <div>
-                    <p>LOCAL</p>
+                    <p class="team">LOCAL</p>
                     <p id="local">0</p>
                 </div>
                 <div>
-                    <p>AWAY</p>
+                    <p class="team">AWAY</p>
                     <p id="away">0</p>
                 </div>
             </div> 
 
             <div id="buttons">
-                <div id="addButtonLocal">
-                    <div>
-                        <button class="btn plus1"><h3>+1</h3></button>
-                    </div> 
-                    <div>
-                       <button class="btn plus2"><h3>+2</h3></button>
+                <div id="localButtons">
+                    <div id="addButtonLocal">
+                        <div>
+                            <button class="btn plus1" onclick="changeScore(1,'local')"><h3>+1</h3></button>
+                        </div> 
+                        <div>
+                            <button class="btn plus2" onclick="changeScore(2,'local')"><h3>+2</h3></button>
+                        </div>
+                        <div>
+                            <button class="btn plus3" onclick="changeScore(3,'local')"><h3>+3</h3></button>
+                        </div>
                     </div>
-                    <div>
-                        <button class="btn plus3"><h3>+3</h3></button>
-                     </div>
-                </div>
-                <div id="addButtonAway">
-                    <div>
-                        <button class="btn plus1"><h3>+1</h3></button>
-                    </div> 
-                    <div>
-                       <button class="btn plus2"><h3>+2</h3></button>
+                    <div id="subtractButtonLocal">
+                        <div>
+                            <button class="btn plus1" onclick="changeScore(-1,'local')"><h3>-1</h3></button>
+                        </div> 
+                        <div>
+                            <button class="btn plus2" onclick="changeScore(-2,'local')"><h3>-2</h3></button>
+                        </div>
+                        <div>
+                            <button class="btn plus3" onclick="changeScore(-3,'local')"><h3>-3</h3></button>
+                        </div>
                     </div>
-                    <div>
-                        <button class="btn plus3"><h3>+3</h3></button>
-                     </div>
                 </div>
+                <div id="awayButtons">
+                    <div id="addButtonAway">
+                        <div>
+                            <button class="btn plus1" onclick="changeScore(1,'away')"><h3>+-1</h3></button>
+                        </div> 
+                        <div>
+                            <button class="btn plus2" onclick="changeScore(2,'away')"><h3>+2</h3></button>
+                        </div>
+                        <div>
+                            <button class="btn plus3" onclick="changeScore(3,'away')"><h3>+3</h3></button>
+                        </div>
+                    </div>
+                    <div id="subtractButtonLocal">
+                        <div>
+                            <button class="btn plus1"  onclick="changeScore(-1,'away')"><h3>-1</h3></button>
+                        </div> 
+                        <div>
+                            <button class="btn plus2" onclick="changeScore(-2,'away')"><h3>-2</h3></button>
+                        </div>
+                        <div>
+                            <button class="btn plus3" onclick="changeScore(-3,'away')"><h3>-3</h3></button>
+                        </div>
+                    </div>
+                    </div>     
                 </div>
-                    
-                </div>
-
+            </div>
         </div>
 
-        <a href="https://github.com/arioliveirari/basketballCounter" target="_blank"><p class="footer">Copyleft - Ariel Oliveira</p></a>
+        <p class="footer">Copyleft - Ariel Oliveira (click <a href="https://github.com/arioliveirari/basketballCounter" target="_blank">here</a> to get code)</p>
         <script src="index.js" ></script>
     </body>
 </html>
