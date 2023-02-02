@@ -28,6 +28,7 @@ body {
 .footer{
     margin:0 auto;
     color: #b0c4de;
+    text-decoration: none !important;
 }
 
 #buttons,#scores ,#addButtonLocal ,#addButtonAway{
