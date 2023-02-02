@@ -1,35 +1,23 @@
 body {
     text-align: center;
     margin: 0 auto;
-    background-color: #d7bba8;
+    background-color: #19244d;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+
 }
 
-
-#gameCode {
-    display: flex;
-    justify-content: space-evenly;
-}
 
 #header {
     max-width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
-#banner {
-    margin: 0 auto;
-    height: 35%;
-    background-image: url("images/banner.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .btn{
-    width: 100px;
-    border: #3E2A35 solid 2px;
-    border-radius: 20px;
-    background-color: #E26D5A;
+    width: 75px;
+    border: #b0c4de solid 2px;
+    border-radius: 10px;
+    background-color: #19244d;
 }
 
 .btn:hover{
@@ -37,38 +25,45 @@ body {
 }
 
 
-.chessboard {
-    width: 640px;
-    height: 640px;
-    margin: 20px auto;
-    border: 10px solid #000;
-    border-radius: 4px;
-    background: #e59110;
-
-}
-.black {
-    float: left;
-    width: 80px;
-    height: 80px;
-    background-color: #3E2A35;
-    
-}
-.white {
-    float: left;
-    width: 80px;
-    height: 80px;
-    background-color: #E26D5A;
-}
-
-
-.chessBtn {
-    width: 100%;
-    height: 100%;
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-    border: 0px ;
-}
-
 .footer{
     margin:0 auto;
+    color: #b0c4de;
+}
+
+#buttons,#scores ,#addButtonLocal ,#addButtonAway{
+    display: flex;
+    justify-content: space-evenly;
+    color: #b0c4de;
+ } 
+
+#scores{
+    font-size: 100px;
+}
+
+#title{
+    color: #b0c4de;
+    font-size: 25px;
+}
+
+.btn{
+    color: #b0c4de;
+}
+
+.plus2{
+    margin: 0 10px;
+}
+
+
+#local, #away{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    border: 5px black solid;
+    border-radius: 0px;
+    background-color: black;
+    color: #f94f6d;
+    font-size: 100px;
 }
